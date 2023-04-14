@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coursetype_details",
+  "info": {
+    "singularName": "coursetype-detail",
+    "pluralName": "coursetype-details",
+    "displayName": "coursetypeDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "learningtype": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-detail.course-detail",
+      "mappedBy": "coursetype_detail"
+    },
+    "learning_type_name": {
+      "type": "string"
+    },
+    "course_info": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-info.course-info",
+      "inversedBy": "course"
+    }
+  }
+}

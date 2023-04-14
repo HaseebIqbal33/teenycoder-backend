@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_bottoms_data",
+  "info": {
+    "singularName": "about-us-bottom-data",
+    "pluralName": "about-us-bottoms-data",
+    "displayName": "aboutUsBottomData",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "src": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "order": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "default": "\"\""
+    }
+  }
+}

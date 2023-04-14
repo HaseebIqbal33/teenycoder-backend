@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currculums",
+  "info": {
+    "singularName": "currculum",
+    "pluralName": "currculums",
+    "displayName": "currculum",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "string",
+      "required": true
+    },
+    "bulletsColor": {
+      "type": "string",
+      "required": true
+    },
+    "contentBottomHeading": {
+      "type": "string"
+    },
+    "contentHeading": {
+      "type": "string",
+      "required": true
+    },
+    "list": {
+      "type": "json",
+      "required": true
+    },
+    "testimg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "test": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expert_panels",
+  "info": {
+    "singularName": "expert-panel",
+    "pluralName": "expert-panels",
+    "displayName": "ExpertPanel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "employmentPlace": {
+      "type": "string",
+      "required": true
+    },
+    "src": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

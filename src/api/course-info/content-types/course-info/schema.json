@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_infos",
+  "info": {
+    "singularName": "course-info",
+    "pluralName": "course-infos",
+    "displayName": "CourseInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "grade": {
+      "type": "string",
+      "required": true
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coursetype-detail.coursetype-detail",
+      "mappedBy": "course_info"
+    }
+  }
+}

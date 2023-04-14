@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "privicies",
+  "info": {
+    "singularName": "privicy",
+    "pluralName": "privicies",
+    "displayName": "privicy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PirvicyPolicyData": {
+      "type": "json"
+    },
+    "note": {
+      "type": "string"
+    },
+    "shownote": {
+      "type": "boolean"
+    }
+  }
+}

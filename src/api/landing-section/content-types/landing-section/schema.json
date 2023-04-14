@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_sections",
+  "info": {
+    "singularName": "landing-section",
+    "pluralName": "landing-sections",
+    "displayName": "landing_section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "landing_title": {
+      "type": "string",
+      "required": true
+    },
+    "landing_sub_title": {
+      "type": "string",
+      "required": true
+    },
+    "landing_subtitle_2": {
+      "type": "string",
+      "required": true
+    },
+    "title_text_options": {
+      "type": "json"
+    }
+  }
+}

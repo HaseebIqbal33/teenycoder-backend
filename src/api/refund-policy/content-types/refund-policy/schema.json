@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "refund_policies",
+  "info": {
+    "singularName": "refund-policy",
+    "pluralName": "refund-policies",
+    "displayName": "refundPolicy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "refundPolicyData": {
+      "type": "json"
+    }
+  }
+}

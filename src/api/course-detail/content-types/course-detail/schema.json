@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_details",
+  "info": {
+    "singularName": "course-detail",
+    "pluralName": "course-details",
+    "displayName": "singleCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "bulletsColor": {
+      "type": "string"
+    },
+    "contentBottomHeading": {
+      "type": "string"
+    },
+    "contentHeading": {
+      "type": "string"
+    },
+    "pointsList": {
+      "type": "json"
+    },
+    "activities": {
+      "type": "integer"
+    },
+    "coursePrice": {
+      "type": "biginteger"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "lectures": {
+      "type": "integer"
+    },
+    "PrimaryBg": {
+      "type": "string"
+    },
+    "secondaryBg": {
+      "type": "string"
+    },
+    "contentIcon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coursetype_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::coursetype-detail.coursetype-detail",
+      "inversedBy": "learningtype"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

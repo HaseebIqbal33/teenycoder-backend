@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs_details",
+  "info": {
+    "singularName": "jobs-detail",
+    "pluralName": "jobs-details",
+    "displayName": "JobsDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "department": {
+      "type": "string",
+      "required": true
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "jobType": {
+      "type": "string",
+      "required": true
+    },
+    "career_datum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::career-data.career-data",
+      "inversedBy": "jobs_details"
+    },
+    "experience": {
+      "type": "string"
+    }
+  }
+}

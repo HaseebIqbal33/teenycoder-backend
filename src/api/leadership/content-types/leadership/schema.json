@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaderships",
+  "info": {
+    "singularName": "leadership",
+    "pluralName": "leaderships",
+    "displayName": "leadership"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "education": {
+      "type": "string",
+      "required": true
+    },
+    "achievment": {
+      "type": "string",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "default": "\"\""
+    },
+    "src": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
